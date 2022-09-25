@@ -65,9 +65,9 @@ const USER_CONFIG = {
       // 想要发送的人的名字
       name: '亲爱的小莉',
       // 扫码关注你的微信测试号后生成的一段字符串，在测试号后台能看到
-      id: 'oaerH5kqDs0j6oY8O9BqkaKrlzPc',
+      id: 'oaerH5lE3Mo5tSUmEgx15IjxBOKo',
       // 你想对他发送的模板消息的模板ID
-      useTemplateId: 'ZJqGWdyXs0MwWZg_SJb1sVTqpavn8J2ilwcOqV68d2U',
+      useTemplateId: 'zr1KKR3LBL0bbdQMI9pJEI_QWbWEaOc9ON0TIxmBlIA',
       // 所在省份
       province: '陕西',
       // 所在城市
@@ -82,11 +82,11 @@ const USER_CONFIG = {
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '小莉的六哥', year: '1994', date: '10-06',
+          type: '*生日', name: '六哥', year: '1994', date: '10-06',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
-          type: '生日', name: '六哥的小莉', year: '1996', date: '06-07',
+          type: '生日', name: '小莉', year: '1996', date: '06-07',
         },
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
@@ -220,11 +220,11 @@ const USER_CONFIG = {
   FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
     {
-      type: '*生日', name: '小莉的六哥', year: '1994', date: '10-06', isShowAge: true,
+      type: '*生日', name: '六哥', year: '1994', date: '10-06', isShowAge: true,
     },
     // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
     {
-      type: '生日', name: '六哥的小莉', year: '1996', date: '06-07', isShowAge: true,
+      type: '生日', name: '小莉', year: '1996', date: '06-07', isShowAge: true,
     },
     // 你可以不断按格式往下增加
     // ...
