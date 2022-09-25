@@ -77,23 +77,17 @@ const USER_CONFIG = {
       // 获取什么时候的星座运势，可选：['今日', '明日', '本周', '本月', '今年'], 留空则随机
       horoscopeDateType: '今日',
       // 他点击详情后跳转的页面,你可以设置成微博的热榜，也可以设置成其他，网址一定要填对；不填对也没关系，随便你，会打不开而已。
-      openUrl: 'https://wangxinleo.cn',
+      openUrl: '',
       // 专属节日提醒，如果你在这里填写了节日提醒，就不会执行FESTIVALS的提醒了, 和FESTIVALS的配置方法相同，可以往下查看，我这里就不重复写了
       festivals: [
         // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
         {
-          type: '*生日', name: '六哥', year: '1994', date: '10-06',
-        },
-        {
-          type: '节日', name: '结婚纪念日', year: '2020', date: '09-03',
+          type: '*生日', name: '小莉的六哥', year: '1994', date: '10-06',
         },
         // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
         {
-          type: '生日', name: '小莉', year: '1996', date: '06-07',
+          type: '生日', name: '六哥的小莉', year: '1996', date: '06-07',
         },
-        {
-          type: '节日', name: '被搭讪纪念日', year: '2021', date: '09-01',
-        }
       ],
       // 专属纪念日/倒数日，如果你在这里填写了纪念日/倒数日，就不会计算CUSTOMIZED_DATE_LIST的日子了, 和CUSTOMIZED_DATE_LIST的配置方法相同，可以往下查看，我这里就不重复写了
       customizedDateList: [
@@ -170,45 +164,6 @@ const USER_CONFIG = {
         }
       },
     },
-    {
-      name: '老婆1',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    },
-    {
-      name: '老婆2',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    },
-    {
-      name: '老婆3',
-      id: '',
-      useTemplateId: '',
-      province: '',
-      city: '',
-      horoscopeDate: '',
-      horoscopeDateType: '',
-      openUrl: 'https://wangxinleo.cn',
-      festivals: [],
-      customizedDateList: [],
-      courseSchedule: null
-    }
     // 你可以不断按格式往下增加
     // ...
   ],
@@ -265,18 +220,12 @@ const USER_CONFIG = {
   FESTIVALS: [
     // 注意：此条配置日期为阴历日期，因为`type`中 “生日” 之前有 * 符号
     {
-      type: '*生日', name: '六哥', year: '1994', date: '10-06', isShowAge: true,
-    },
-    {
-      type: '节日', name: '结婚纪念日', year: '2020', date: '09-03',
+      type: '*生日', name: '小莉的六哥', year: '1994', date: '10-06', isShowAge: true,
     },
     // 注意：此条配置日期为阳历日期，因为`type`中 “生日” 之前没有 * 符号
     {
-      type: '生日', name: '小莉', year: '1996', date: '06-07', isShowAge: true,
+      type: '生日', name: '六哥的小莉', year: '1996', date: '06-07', isShowAge: true,
     },
-    {
-      type: '节日', name: '被搭讪纪念日', year: '2021', date: '09-01',
-    }
     // 你可以不断按格式往下增加
     // ...
   ],
@@ -286,7 +235,7 @@ const USER_CONFIG = {
    * 如果为3, 则仅展示“将要到达” 的3个重要节日提醒，剩下的将被忽略
    * 如果为0, 则默认展示全部
    */
-  FESTIVALS_LIMIT: 4,
+  FESTIVALS_LIMIT: 0,
 
   /** 日期相关 */
 
@@ -299,8 +248,6 @@ const USER_CONFIG = {
     { keyword: 'love_day', date: '2022-04-17' },
     // 结婚纪念日
     { keyword: 'first_day', date: '2022-04-04' },
-    // 退伍日
-    { keyword: 'ex_day', date: '2022-09-10' }
     // 你可以不断按格式往下增加
     // ...
   ],
